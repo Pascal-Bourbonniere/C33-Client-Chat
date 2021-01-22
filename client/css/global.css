@@ -1,4 +1,80 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    position: absolute;
+    background-image: url('../img/background.png');
+    height: 950px;
+    width: 1080px;
+}
+
+#background {
+    border: 3px solid yellow;
+    height: 600px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sign-in-input-group {
+    width: 350px;
+    padding: 20px;
+    padding-bottom: 100px;
+    border: 1px solid #888;
+    background-color: rgba(244, 122, 121, 0.5);
+    margin: 100px auto;
+    margin-left: 750px;
+    box-shadow: 0 0 15px #000;
+    border-radius: 12px;
+}
+
+.Sans {
+    /*border: 3px solid yellow;*/
+    position: absolute;
+    overflow: hidden;
+    width: 58px;
+    height: 100px;
+}
+
+.Sans_1 {
+    background-image: url('../img/Sans.png');
+    background-size: cover;
+    background-position: 58px 100px;
+}
+
+.register {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: rgba(85, 85, 250, 0.5);
+    margin-left: 900px;
+    cursor: pointer;
+    color: rgba(24, 22, 22, 1)
+}
+
+.register:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    background-color: rgba(85, 85, 250, 0.5);
+    padding: 5px;
+    border: 2px solid darkblue;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 20px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:link {
+    text-decoration: none;
 }
