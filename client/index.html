@@ -7,24 +7,29 @@
     <title>Accueil</title>
     <script type="module" src="src/page-index.js"></script>
     <script src="src/sprites/Sans.js"></script>
+    <script src="src/animation.js"></script>
     <link rel="stylesheet" href="..\css\global.css">
     <link rel="icon" href="img/favicon.png" type="image/png" />
 </head>
 
-<body>
+<body class="background1">
 
     <form action="" method="post" autocomplete="off">
         <div class="sign-in-input-group">
             <div id="api-message"></div>
-            <input type="text" name="username" placeholder="Nom d'usager" required>
-            <input type="password" name="password" placeholder="Mot de passe" required>
+            <div class="question">
+                <input type="text" name="username" placeholder="Nom d'usager" required>
+            </div>
+            <div class="question">
+                <input type="password" name="password" placeholder="Mot de passe" required>
+            </div>
             <button class="button">Connexion</button>
         </div>
     </form>
     <a class="register" href="register.html">S'enregistrer</a>
 
 
-    <div id="background"></div>
+    <div id="Sans_Container"></div>
 
 </body>
 
