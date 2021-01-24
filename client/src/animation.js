@@ -1,4 +1,6 @@
 let spriteList = []
+let life = 3
+let score = 0
 window.addEventListener("load", () => {
     spriteList.push(new Sans())
     const tick = () => {

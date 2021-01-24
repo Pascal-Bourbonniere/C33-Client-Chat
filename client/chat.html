@@ -11,14 +11,27 @@
     <script type="module" src="src/page-chat.js"></script>
 </head>
 
-<body>
-    <!-- Tout le code html doit faire partie de ce div -->
-    <div id="app">
-        <a href="javascript:void(0)" id="sign-out-btn" @click="signout">Déconnexion</a>
-        <div>
-            <textarea cols="30" rows="10" v-on:keyup.enter="sendMessage($event)" ref="el"></textarea>
+<body class="background3"></body>
+<!-- Tout le code html doit faire partie de ce div -->
+<div id="app">
+    <div id="list-container">
+        <div class="button disconect"><a href="javascript:void(0)" id="sign-out-btn" @click="signout">Déconnexion</a></div>
+        <div class="message-box">
+            <div class="user-message" v-for="message in messages">
+                <div class="item-cell">{{ message }}</div>
+            </div>
+            <div class="recived-message" v-for="user in fromUsers">
+                <div class="item-cell">{{ user.fromUser }}</div>
+            </div>
         </div>
+        <div><textarea class="text-box" cols="30" rows="10" v-on:keyup.enter="sendMessage($event)" ref="el"></textarea></div>
+        <div class="online-members" v-for="member in members">
+            <div class="item-cell">online: {{ members }}</div>
+        </div>
+
     </div>
+</div>
+
 </body>
 
 </html>
