@@ -1,3 +1,4 @@
+MIN_SPEED = 10
 class Sans {
     constructor() {
 
@@ -8,7 +9,7 @@ class Sans {
         this.y = 35
         this.isAlive = true;
         this.right = true;
-        this.velocity = -Math.random() * 8
+        this.velocity = -Math.random() * 8 + MIN_SPEED
         document.getElementById('Sans_Container').appendChild(this.element);
         this.move()
         document.getElementById('Sans_Container')
@@ -24,15 +25,8 @@ class Sans {
     }
     move() {
 
-
-
         this.element.style.top = `${this.y}px`
         this.element.style.left = `${this.x}px`
-
-
-        //this.move()
-
-
     }
 
     tick() {

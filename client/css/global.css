@@ -7,6 +7,7 @@
     background-image: url('../img/UnderTale.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .background2 {
@@ -64,7 +65,7 @@
     margin-right: 50px;
     margin-top: 50px;
     position: absolute;
-    top: 20;
+    top: 20px;
     right: 0;
     display: block;
     z-index: 1;
@@ -88,6 +89,7 @@
     width: 58px;
     height: 100px;
     position: absolute;
+    cursor: pointer
 }
 
 .Sans_2 {
@@ -96,6 +98,7 @@
     width: 58px;
     height: 100px;
     position: absolute;
+    cursor: pointer
 }
 
 .Sans_3 {
@@ -146,7 +149,7 @@
     cursor: pointer;
     position: absolute;
     right: 130px;
-    top: 400px;
+    top: 500px;
 }
 
 .button2:hover {
@@ -201,17 +204,9 @@ a:link {
 }
 
 .user-message {
-    font-style: sans-serif;
+    font: 20px Arial, sans-serif;
     color: rgb(178, 157, 255);
     text-shadow: 0 0 9px rgb(93, 209, 255);
-    font-size: 20px;
-}
-
-.recived-message {
-    font-style: fantasy;
-    color: rgb(209, 14, 14);
-    text-shadow: 0 0 9px rgb(253, 228, 0);
-    font-size: 20px;
 }
 
 .text-box {
@@ -231,10 +226,9 @@ a:link {
 
 textarea {
     resize: none;
-    font-style: sans-serif;
+    font: 20px Arial, sans-serif;
     color: rgb(178, 157, 255);
     text-shadow: 0 0 9px rgb(93, 209, 255);
-    font-size: 20px;
 }
 
 .online-members {

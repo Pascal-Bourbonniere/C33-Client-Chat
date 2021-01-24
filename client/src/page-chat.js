@@ -15,8 +15,8 @@ new Vue({
         // Lorsqu'un nouveau message doit être affiché à l'écran, cette fonction est appelée
         async newMessage(fromUser, message, isPrivate) {
             console.log(fromUser, message, isPrivate);
-            this.fromUsers.push(fromUser);
-            this.messages.push(message);
+            this.messages.push({ name: fromUser, mess: message })
+
 
 
         },
@@ -42,9 +42,11 @@ new Vue({
     /* NO TOUCH */
     /* FIN NO TOUCH */
     data: {
-        messages: [],
-        members: [],
-        fromUsers: []
+        messages: [{
+            name: "",
+            mess: ""
+        }],
 
+        members: [],
     }
 })
