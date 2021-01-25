@@ -196,6 +196,10 @@ a:link {
 
 /* page canvas*/
 
+#api-message {
+    font: 15px Arial, sans-serif;
+}
+
 #canvas-container {
     position: absolute;
     top: 0;
@@ -228,6 +232,12 @@ a:link {
     font: 20px Arial, sans-serif;
     color: rgb(178, 157, 255);
     text-shadow: 0 0 9px rgb(93, 209, 255);
+}
+
+.received-message {
+    font: 20px Arial, sans-serif;
+    color: rgb(243, 240, 36);
+    text-shadow: 0 0 9px rgb(45, 253, 45);
 }
 
 .text-box {

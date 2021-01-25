@@ -12,16 +12,18 @@
 </head>
 
 <body class="background3"></body>
-<!-- Tout le code html doit faire partie de ce div -->
+<!-- elements du chat -->
 <div id="app">
     <div id="list-container">
         <div class="button disconect"><a href="javascript:void(0)" id="sign-out-btn" @click="signout">Déconnexion</a></div>
+        <!--container pour les message envoiyer et recu -->
         <div class="message-box">
-            <div class="user-message" v-for="InMess in messages">
+            <div class="user-message" :class="[InMess.name == 'Pascal' ? 'user-message' : 'received-message']" v-for="InMess in messages">
                 <div class="item-cell">{{ InMess.name }}: {{ InMess.mess }}</div>
             </div>
         </div>
         <div><textarea class="text-box" cols="30" rows="10" v-on:keyup.enter="sendMessage($event)" ref="el"></textarea></div>
+        <!--pour afficher les gens en-ligne-->
         <div class="online-members" v-for="member in members">
             <div class="item-cell">online: {{ members }}</div>
         </div>

@@ -1,6 +1,7 @@
 let spriteList = []
 let life = 3
 let score = 0
+    //creation du personnage sur lecran de jeu- apparait quand le personnage est sortie de lecran a droite ou gauche//
 window.addEventListener("load", () => {
     spriteList.push(new Sans())
     const tick = () => {
