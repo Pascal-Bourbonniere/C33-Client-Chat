@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+
+/*background des trois pages*/
+
 .background3 {
     background-image: url('../img/UnderTale.png');
     background-repeat: no-repeat;
@@ -26,14 +29,8 @@
     background-size: cover;
 }
 
-#Sans_Container {
-    /*border: 3px solid yellow;*/
-    margin-top: 20px;
-    height: 450px;
-    width: 1900px;
-    overflow: hidden;
-    position: relative;
-}
+
+/*le formulaire*/
 
 .sign-in-input-group {
     width: 350px;
@@ -53,6 +50,9 @@
     padding: 15px;
     margin-bottom: 30px;
 }
+
+
+/*Css for forms*/
 
 .form-section {
     width: 250px;
@@ -76,6 +76,18 @@
     border: 1px solid #ddd;
     padding: 5px;
     margin-bottom: 10px;
+}
+
+
+/*css pour le personnage/jeu */
+
+#Sans_Container {
+    /*border: 3px solid yellow;*/
+    margin-top: 20px;
+    height: 450px;
+    width: 1900px;
+    overflow: hidden;
+    position: relative;
 }
 
 .Sans {
@@ -108,6 +120,23 @@
     height: 100px;
     position: absolute;
 }
+
+.info {
+    font-size: 50px;
+    font-style: italic;
+    width: 250px;
+    height: 150px;
+    color: rgb(219, 0, 219);
+    border: 1px solid #888;
+    background-color: rgba(0, 0, 222, 0.5);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+
+/* css pour les buttons*/
 
 .register {
     width: 350px;
@@ -164,19 +193,8 @@ a:link {
     text-decoration: none;
 }
 
-.info {
-    font-size: 50px;
-    font-style: italic;
-    width: 250px;
-    height: 150px;
-    color: rgb(219, 0, 219);
-    border: 1px solid #888;
-    background-color: rgba(0, 0, 222, 0.5);
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 4px;
-}
+
+/* page canvas*/
 
 #canvas-container {
     position: absolute;
@@ -188,6 +206,9 @@ a:link {
     /*border: 1px solid gold;*/
     overflow: hidden;
 }
+
+
+/*css pour le chat*/
 
 .message-box {
     width: 600px;
